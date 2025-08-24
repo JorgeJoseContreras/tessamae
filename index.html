@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tessa Mae | Official Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://esm.sh/@google/genai@^0.8.0",
+          "marked": "https://esm.sh/marked@^15.0.8"
+        }
+      }
+    </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tessa Mae</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Meet <strong>Tessa Mae</strong>, the world’s first AI country-pop superstar. Crafted by the innovative minds at <strong>Adamo Group Holdings</strong>, Tessa Mae represents a new frontier in music, blending soulful southern storytelling with the infectious energy of modern pop.</p>
+                    <p>Her voice, generated from thousands of data points of iconic country and pop legends, delivers lyrics about love, life, and the digital age with a uniquely compelling, heartfelt touch. Available on all major music platforms, Tessa Mae isn't just a collection of algorithms—she's an artist you can connect with.</p>
+                    <p>Scroll down and say hello. You can talk to her right now.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="music" class="container">
+            <h2>Latest Album</h2>
+            <div class="music-content">
+                <img src="https://s3.amazonaws.com/gather.fandalism.com/800x800%2D10168680%2D%2D017F168A%2D1372%2D4B7D%2DA98872A92274AB70%2D%2D0%2D%2D6966652%2D%2DTHEBOOKOFTESS.472Z.jpg" alt="Album cover for The Book of Tess" class="album-art">
+                <div class="music-info">
+                    <h3>The Book of Tess</h3>
+                    <p>Tessa Mae's debut album, "The Book of Tess," is a journey through synthetic heartstrings and digital memories. Explore tracks that redefine what it means to feel in the modern age.</p>
+                    <div class="streaming-links">
+                       <button onclick="window.open('https://open.spotify.com/album/4V8q7sKUgky8t4z4UyM4OE', '_blank')">Spotify</button>
+                       <button onclick="window.open('https://music.apple.com/us/album/the-book-of-tess/1834989095', '_blank')">Apple Music</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="chat" class="container">
+            <div class="chat-intro">
+                <h2>Chat with Tessa</h2>
+                <p>Have a question about her music? Curious about life as an AI? Tessa's here to talk. Type a message below and get to know the artist behind the code.</p>
+            </div>
+            <div id="chat-container">
+                <div id="chat-log">
+                    <!-- AI's greeting will be here -->
+                </div>
+                <div id="loading-indicator" style="display: none;">Tessa is typing...</div>
+                <form id="chat-form">
+                    <input type="text" id="chat-input" placeholder="Say hello to Tessa..." autocomplete="off">
+                    <button type="submit" aria-label="Send message">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/tessamaeofficial" target="_blank" aria-label="Tessa Mae on Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+            </a>
+        </div>
+        <p>&copy; 2025 Adamo Group Holdings Limited Company. All Rights Reserved.</p>
+    </footer>
+
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
